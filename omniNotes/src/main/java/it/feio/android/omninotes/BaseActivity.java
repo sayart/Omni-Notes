@@ -96,13 +96,11 @@ public class BaseActivity extends AppCompatActivity {
     LogDelegate.d(Prefs.getAll().toString());
   }
 
-
   protected void showToast(CharSequence text, int duration) {
     if (Prefs.getBoolean("settings_enable_info", true)) {
       Toast.makeText(getApplicationContext(), text, duration).show();
     }
   }
-
 
   /**
    * Method to validate security password to protect a list of notes. When "Request password on

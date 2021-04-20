@@ -34,6 +34,8 @@ import android.content.res.Configuration;
 import android.net.Uri;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.rule.GrantPermissionRule;
+
+import com.kaspersky.kaspresso.testcases.api.testcase.DocLocScreenshotTestCase;
 import com.pixplicity.easyprefs.library.Prefs;
 import de.greenrobot.event.EventBus;
 import it.feio.android.omninotes.async.bus.CategoriesUpdatedEvent;
@@ -63,7 +65,7 @@ import org.junit.BeforeClass;
 import org.junit.Rule;
 
 
-public class BaseAndroidTestCase {
+public class BaseAndroidTestCase{
 
   protected static final Locale PRESET_LOCALE = new Locale(ENGLISH.toString());
   protected static DbHelper dbHelper;

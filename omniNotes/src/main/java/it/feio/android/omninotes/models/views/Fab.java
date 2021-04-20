@@ -45,14 +45,12 @@ public class Fab {
 
   OnFabItemClickedListener onFabItemClickedListener;
 
-
   public Fab(View fabView, RecyclerView listView, boolean expandOnLongClick) {
     this.floatingActionsMenu = (FloatingActionsMenu) fabView;
     this.listView = listView;
     this.expandOnLongClick = expandOnLongClick;
     init();
   }
-
 
   private void init() {
     this.fabHidden = true;
